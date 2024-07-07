@@ -16,6 +16,13 @@ spring:
       idle-timeout: 600000
       max-lifetime: 1800000
 
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://localhost/socialmedia
+    user: postgres
+    password: postgres
+    baseline-on-migrate: true
+
 logging:
   level:
     org.springframework.security: DEBUG
