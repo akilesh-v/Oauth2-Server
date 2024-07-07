@@ -26,9 +26,6 @@ public class CustomErrorController implements ErrorController {
 
     private static final Logger logger = LoggerFactory.getLogger(CustomErrorController.class);
 
-    @Autowired
-    private  ErrorAttributes errorAttributes;
-
     @RequestMapping("/error")
     @ResponseBody
     public String handleError(HttpServletRequest request) {
